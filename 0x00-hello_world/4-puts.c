@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	puts("Hamoksha is in the house");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
 
