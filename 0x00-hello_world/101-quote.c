@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
 * main - main function of the program
 * Description: Longer description of the main function
