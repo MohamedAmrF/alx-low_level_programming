@@ -3,6 +3,7 @@
 
 #include <unistd.h>
 
+void rev_string(char *s);
 int _putchar(char c);
 void reset_t0_98(int *n);
 void swap_int(int *a, int* b);
