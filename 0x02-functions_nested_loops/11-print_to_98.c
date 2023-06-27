@@ -17,10 +17,6 @@ void print_to_98(int n)
 			n *= -1;
 			flag = 1;
 		}
-		if (n > 98)
-			n--;
-		else
-			n++;
 		if (flag)
 			_putchar('-');
 		if (n >= 100)
@@ -30,6 +26,8 @@ void print_to_98(int n)
 		_putchar((n % 10) + '0');
 		_putchar(',');
 		_putchar(' ');
+		if (n < 98)
+			n--;
 	}
 	_putchar('9');
 	_putchar('8');
