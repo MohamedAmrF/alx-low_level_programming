@@ -3,6 +3,8 @@
 
 /**
 * myput - converts two digit int to xx format
+* @x: two digit number to be printed.
+*
 * Return: void
 */
 void myput(int x)
