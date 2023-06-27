@@ -14,7 +14,7 @@ int _putchar(char c)
 
 /**
 * print_alphabet - prints alphabet in order
-* return: void
+* Return: void
 */
 void print_alphabet(void)
 {
