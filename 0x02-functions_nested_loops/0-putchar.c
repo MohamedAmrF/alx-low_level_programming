@@ -1,6 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+* main - main function
+* return: 0 (success)
+*/
 int main(void)
 {
 	putchar('_');
@@ -8,10 +11,10 @@ int main(void)
 	putchar('u');
 	putchar('t');
 	putchar('c');
-	putchar('h');	
+	putchar('h');
 	putchar('a');
 	putchar('r');
 	putchar('\n');
-	
+
 	return (0);
 }
