@@ -3,7 +3,7 @@
 
 #include <unistd.h>
 
-int _putchar(int);
+int _putchar(char c);
 void reset_t0_98(int *n);
 void swap_int(int *a, int* b);
 int _strlen(char *s);
