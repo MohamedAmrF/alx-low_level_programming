@@ -8,12 +8,12 @@
  */
 void print_rev(char *s)
 {
-	char arr[100];
+	char arr[1000];
 	int i = 0;
 
 	while (*s != '\0')
 	{
-		arr[i++] = *s++; 
+		arr[i++] = *s++;
 	}
 	while (i >= 0)
 	{
