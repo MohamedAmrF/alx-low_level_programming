@@ -13,7 +13,10 @@ int main(void)
 	while (c <= 'z')
 	{
 		if (c == 'q' || c == 'e')
+		{
+			c++;
 			continue;
+		}
 		putchar(c);
 		c++;
 	}
