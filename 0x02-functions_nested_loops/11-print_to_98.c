@@ -10,10 +10,19 @@ void print_to_98(int n)
 {
 	while (n != 98)
 	{
+		bool flag = 0;
+
+		if (n < 0)
+		{
+			n *= -1;
+			flag = 1;
+		}
 		if (n > 98)
 			n--;
 		else
 			n++;
+		if (flag)
+			_putchar('-');
 		if (n >= 100)
 			_putchar('0' + (n / 100) % 10);
 		if (n >= 10)
