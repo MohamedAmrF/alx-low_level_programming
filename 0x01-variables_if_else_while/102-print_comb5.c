@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
-* myputchar - converts two digit int to xx format
+* myput - converts two digit int to xx format
 * Return: void
 */
-void myputchar(int x)
+void myput(int x)
 {
 	if (x < 10)
 	{
@@ -32,9 +32,9 @@ int main(void)
 	{
 		for (j = i + 1; j < 100; j++)
 		{
-			myputchar(i);
+			myput(i);
 			putchar(' ');
-			myputchar(j);
+			myput(j);
 			if (i < 98)
 			{
 				putchar(',');
