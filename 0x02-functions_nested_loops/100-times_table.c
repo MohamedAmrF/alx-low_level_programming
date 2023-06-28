@@ -13,7 +13,7 @@ void print_times_table(int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; j < n; j++)
 		{
 			int answer = i * j;
 
@@ -23,7 +23,7 @@ void print_times_table(int n)
 				_putchar(' ');
 
 			_putchar('0' + answer % 10);
-			if (j < 9)
+			if (j < n-1)
 			{
 				_putchar(',');
 				_putchar(' ');
