@@ -1,20 +1,27 @@
 #include "main.h"
-
 /**
-* puts2 - prints
-* @str: input
-*
-* Return: void
-*/
+ * puts2 - prints every other character of a string
+ * starting with the first character.
+ * @str: the string.
+ *
+ * Return: Void.
+ */
 void puts2(char *str)
 {
-	int i = 0;
+	int length = 0;
 
-	while (*str != '\0')
+	while (*(str + length) != '\0')
 	{
-		if (i % 2 == 0)
-			_putchar(*str++);
-		else
-			*str++;
+	if (length % 2)
+	{
+		length++;
+		continue;
 	}
+	else
+	{
+		_putchar(*(str + length));
+		length++;
+	}
+	}
+	_putchar('\n');
 }
