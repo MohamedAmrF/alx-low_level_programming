@@ -20,7 +20,7 @@ int main(void)
 	}
 	for (i = 0; i < 49; i++)
 	{
-		printf("%ld, ", arr[i]);	
+		printf("%ld, ", arr[i]);
 	}
 	printf("%ld\n", arr[49]);
 	return (0);
