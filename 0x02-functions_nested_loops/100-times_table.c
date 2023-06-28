@@ -23,7 +23,7 @@ void print_times_table(int n)
 				_putchar(' ');
 
 			_putchar('0' + answer % 10);
-			if (j < n-1)
+			if (j < n - 1)
 			{
 				_putchar(',');
 				_putchar(' ');
