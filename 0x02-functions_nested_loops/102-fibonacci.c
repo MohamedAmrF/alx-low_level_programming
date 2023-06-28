@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i = 2;
-	long long arr[59] = {0};
+	long arr[59] = {0};
 
 	arr[0] = 1;
 	arr[1] = 2;
@@ -20,9 +20,9 @@ int main(void)
 	}
 	for (i = 0; i < 49; i++)
 	{
-		printf("%lld, ", arr[i]);
+		printf("%ld, ", arr[i]);
 	
 	}
-	printf("%lld\n", arr[49]);
+	printf("%ld\n", arr[49]);
 	return (0);
 }
