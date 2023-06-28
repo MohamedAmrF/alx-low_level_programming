@@ -18,12 +18,11 @@ int main(void)
 	for (i = 2; i <= 100; i++)
 	{
 		arr[i] = arr[i - 1] + arr[i - 2];
-		if (arr[i] >= 4000000)
-			break;
-		if (arr[i] % 2 == 0)
+		if (arr[i] < 4000000)
 			ans += arr[i];
+		else
+			break;
 	}
-	ans += arr[1];
 	printf("%ld\n", ans);
 	return (0);
 }
