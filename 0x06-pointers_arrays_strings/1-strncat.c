@@ -4,6 +4,7 @@
 * _strncat - concat
 * @dest: destination string
 * @src: source string
+* @n: number of characters
 *
 * Return: char pointer to new string
 */
