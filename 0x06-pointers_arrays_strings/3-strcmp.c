@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
+* _strcmp - asdlf
+* @s1: asldkf
+* @s2: sldkf
 *
-*
-*
+* Return: int
 */
 int _strcmp(char *s1, char *s2)
 {
