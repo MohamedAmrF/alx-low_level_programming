@@ -19,6 +19,6 @@ char *_strcat(char *dest, char *src)
 	{
 		*temp++ = *src++;
 	}
-	*temp = src;
+	*temp = *src;
 	return (dest);
 }
