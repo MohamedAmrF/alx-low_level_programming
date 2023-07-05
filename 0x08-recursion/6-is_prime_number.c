@@ -16,6 +16,7 @@ int check(int n, int i)
 		return (0);
 	if (i * i <= n)
 		return (check(n, i + 2));
+	return (1);
 }
 
 /**
