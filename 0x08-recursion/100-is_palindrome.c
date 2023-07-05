@@ -15,7 +15,7 @@ int helper (char *s, int l, int r)
 		return (1);
 	if (s[l] == s[r])
 	{
-		return (helper(s, l+1, r-1));
+		return (helper(s, l + 1, r - 1));
 	}
 	else
 		return (0);
@@ -29,5 +29,5 @@ int helper (char *s, int l, int r)
 */
 int is_palindrome(char *s)
 {
-	return (helper(s, 0, strlen(s)-1));
+	return (helper(s, 0, strlen(s) - 1));
 }
