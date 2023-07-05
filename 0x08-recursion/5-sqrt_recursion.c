@@ -4,7 +4,7 @@
 * checker - helper function
 * @n: number is squared and compared against base
 * @b: base number to check
-
+*
 * Return: int
 */
 int checker(int n, int b)
