@@ -9,7 +9,7 @@
 *
 * Return: int
 */
-int helper (char *s, int l, int r)
+int helper(char *s, int l, int r)
 {
 	if (l >= r)
 		return (1);
