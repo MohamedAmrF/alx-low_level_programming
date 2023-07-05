@@ -22,7 +22,7 @@ int helper (char *s, int l, int r)
 }
 
 /**
-* is_palidrome - check if palindrome
+* is_palindrome - check if palindrome
 * @s: input string
 *
 * Return: 1 if palindrome 0 otherwise
