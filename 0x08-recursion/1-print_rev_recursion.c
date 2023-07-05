@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* void _print_rev_recursion - print in reverse
+* _print_rev_recursion - print in reverse
 * @s: parameter
 *
 * Return: void
 */
 void _print_rev_recursion(char *s)
 {
-	if(*s == '\0')
+	if (*s == '\0')
 	{
 		return;
 	}
