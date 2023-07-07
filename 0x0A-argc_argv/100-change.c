@@ -3,10 +3,11 @@
 #include <string.h>
 
 /**
+* main - entry function
+* @argc: argument count
+* @argv: argument vector
 *
-*
-*
-*
+* Return: 0 success / 1 fail
 */
 int main(int argc, char *argv[])
 {
@@ -18,7 +19,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	cents = atoi(argv[1]);
 	while (cents)
 	{
@@ -47,8 +47,6 @@ int main(int argc, char *argv[])
 			cents -= 1;
 			change++;
 		}
-		else
-			break;
 	}
 	printf("%d\n", change);
 	return (0);
