@@ -13,13 +13,19 @@ int string_to_int(char *s)
 	int n = strlen(s);
 	int ret = 0;
 	int i;
+	int sign = 1;
 
 	for (i = 0; i < n; i++)
 	{
+		if (s[i] == '-')
+		{
+			sign = -1;
+			continue;
+		}
 		ret *= 10;
 		ret += s[i] - '0';
 	}
-	return (ret);
+	return (ret * sign);
 }
 
 /**
