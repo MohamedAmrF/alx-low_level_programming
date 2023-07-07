@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		return (1);
 	}
 	printf("%d\n", string_to_int(argv[1]) * string_to_int(argv[2]));
