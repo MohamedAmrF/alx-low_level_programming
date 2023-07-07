@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-int cents = 0;
-int change = 0;
-
 /**
 * main - entry function
 * @argc: argument count
@@ -14,6 +11,8 @@ int change = 0;
 */
 int main(int argc, char *argv[])
 {
+	int cents = 0, change = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
