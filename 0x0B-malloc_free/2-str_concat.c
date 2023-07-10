@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i < strlen(s1))
+		if (i < (int)strlen(s1))
 			arr[i] = s1[i];
 		else
 			arr[i] = s2[i];
