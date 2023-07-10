@@ -15,21 +15,26 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	int n;
 	char * arr;
+	int size1 = 0;
+	int size2 = 0;
 
-	if (!s1 || !s2)
-		return (0);
+	if (s1)
+		size1 = strlen(s1);
+	if (s2)
+		size2 = strlen(s2);
 
-	n = strlen(s1) + strlen(s2) + 1;
+	n = size1 + size2;
 	arr = malloc(n);
 	if (!arr)
 		return (0);
 
 	for (i = 0; i < n; i++)
 	{
-		if (i < (int)strlen(s1))
+		if (i < size1)
 			arr[i] = s1[i];
 		else
-			arr[i] = s2[i - (int)(strlen(s1))];
+			arr[i] = s2[i - size1];
 	}
+	arr[i] = '\0';
 	return ((char *)arr);
 }
