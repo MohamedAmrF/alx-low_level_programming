@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * create_array - create new array and fill with c
@@ -9,13 +10,16 @@
 */
 char *create_array(unsigned int size, char c)
 {
+	char *arr;
+	unsigned int i = 0;
+
 	if (!size)
 		return (0);
-	char *arr = malloc(size);
-	int i = 0;
+
+	arr = malloc(size);
 
 	for (i = 0; i < size; i++)
 		arr[i] = c;
 
-	return arr;
+	return (arr);
 }
