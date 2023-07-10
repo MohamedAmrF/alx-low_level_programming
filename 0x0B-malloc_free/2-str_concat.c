@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
 * str_concat - concatenate
@@ -28,8 +29,9 @@ char *str_concat(char *s1, char *s2)
 		if (i < (int)strlen(s1))
 			arr[i] = s1[i];
 		else
-			arr[i] = s2[i];
+			arr[i] = s2[i - (int)(strlen(s1))];
 	}
-
+	printf("\n%ld\n", sizeof(arr));
+	printf("%d\n", n);
 	return ((char *)arr);
 }
