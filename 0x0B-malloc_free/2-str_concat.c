@@ -31,7 +31,5 @@ char *str_concat(char *s1, char *s2)
 		else
 			arr[i] = s2[i - (int)(strlen(s1))];
 	}
-	printf("\n%ld\n", sizeof(arr));
-	printf("%d\n", n);
 	return ((char *)arr);
 }
