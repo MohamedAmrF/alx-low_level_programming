@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 	{
 		if ((n >> i) & 1)
 		{
-			flag ++;
+			flag++;
 			printf("1");
 		}
 		else if (flag)
