@@ -9,8 +9,9 @@
 */
 void print_binary(unsigned long int n)
 {
-	int i = 31, flag = 0;
+	int i = 31, flag = 0, temp;
 
+	for (temp = n, i = 0; (temp >>= 1) > 0; i++);
 	for (; i >= 0; i--)
 	{
 		if (n & (1 << i))
