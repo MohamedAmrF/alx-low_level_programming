@@ -20,10 +20,10 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	if (head && *head)
 	{
-		while (tmp->next)
-			tmp = tmp->next;
-		new->prev = tmp;
-		tmp->next = new;
+		while (temp->next)
+			temp = temp->next;
+		new->prev = temp;
+		temp->next = new;
 	}
 	else
 	{
